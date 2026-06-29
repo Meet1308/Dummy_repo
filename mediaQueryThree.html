@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+        }
+        #boxleft {
+            background-color: aquamarine;
+            border: 1px solid blue;
+            width: 47%;   
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxright {
+            background-color: yellow;
+            border: 1px solid brown;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+        p {
+            border: 1px solid red;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: 300px;
+                flex-direction: column;
+            }
+            img {
+                height: 190px;
+                width: 230px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+
+        <div id="boxright">
+            <img src="images.webp" alt="bhagat singh" height="220px" width="300px">
+        </div>
+    </div>
+</body>
+</html>
